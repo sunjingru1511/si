@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tab">
+        <ol class="title">
+           <li ng-repeat="tit in title" ng-click="changTab($index)">{{tit}}</li>>
+        </ol>
+        <ul class="content">
+            <li ng-repeat="con in content">{{con}}</li>>
+         </ul>
+    </div> 
+</body>
+</html>

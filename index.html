@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+        .tab{
+            width:500px;
+            border: 1px solid #ccc;
+        }
+        .tab .title{
+            height: 35px;
+            display: -webkit-flex;
+            background: green;
+        }
+        .tab .title li{
+            text-align: center;
+            line-height: 35px;
+            -webkit-flex:1;
+        }
+        .tab .content{
+            height: 200px;
+            overflow: hidden;
+        }
+        .tab .content li{
+            height: 200px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div ng-app="app">
+        <ng-view></ng-view>
+    </div>
+    <script src="script/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="script/angular-route.js"></script>
+    <script src="app/controller/ct1.js"></script>
+    <script src="app/controller/ct2.js"></script>
+</body>
+</html>
